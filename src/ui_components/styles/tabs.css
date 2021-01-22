@@ -3,35 +3,43 @@ div.tabs ul {
   cursor: pointer;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 
-div.tabs li {
-  float: left;
+div.tabs li.trigger {
+  /* float: left; */
   width: 29.33%;
   margin: 1%;
-  padding: 1%;
+  padding: 2%;
   box-sizing: border-box;
   text-align: center;
   left: -30px;
   position: relative;
+  background: #f2f2f2;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 div.tabs div {
-  float: left;
-  max-width: 29%;
-  margin: 1%;
+  /* float: left; */
+  width: 29%;
+  margin: 0.5%;
   padding: 1%;
+  display: inline-block;
+  left: -30px;
+  position: relative;
 }
 
 ul li.trigger.active {
-  background: rgb(51, 95, 51);
+  background: #ff6565;
   color: #fff;
-  border-radius: 12px;
 }
 
 div.tabs div.content {
   visibility: hidden;
+  background: #fbfbfb;
+  border-radius: 6px;
 }
-div.tabs div.active {
+div.tabs .content.active {
   visibility: visible;
 }
